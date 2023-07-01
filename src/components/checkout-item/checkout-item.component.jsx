@@ -29,9 +29,9 @@ const CheckoutItem = ({ cartItem }) => {
       </ImageContainer>
       <BaseSpan> {name} </BaseSpan>
       <Quantity>
-        <Arrow onClick={removeItemHandler}>&#43;</Arrow>
+        <Arrow onClick={addItemHandler}>&#43;</Arrow>
         <Value>{quantity}</Value>
-        <Arrow onClick={addItemHandler}>&#8722;</Arrow>
+        <Arrow onClick={removeItemHandler}>&#8722;</Arrow>
       </Quantity>
       <BaseSpan> {price}</BaseSpan>
       <RemoveButton onClick={clearItemHandler}>&#10005;</RemoveButton>
